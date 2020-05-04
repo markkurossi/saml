@@ -79,10 +79,10 @@ func SAMLHandler() http.Handler {
 	logr := log.New(os.Stderr, "", log.LstdFlags)
 
 	var urlStr string
-	if false {
+	if true {
 		urlStr = "https://us-east1-markkurossicom.cloudfunctions.net/SAML"
 	} else {
-		urlStr = "http://localhost:8080/"
+		urlStr = "http://localhost:8080"
 	}
 
 	baseURL, err := url.Parse(urlStr)
@@ -126,11 +126,6 @@ func SAMLHandler() http.Handler {
 	})
 	if err != nil {
 		logr.Fatalf("%s", err)
-	}
-
-	err = defineSPs(idpServer)
-	if err != nil {
-		logr.Fatalf("failed to define SPs: %s", err)
 	}
 
 	return idpServer
