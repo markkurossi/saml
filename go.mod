@@ -9,7 +9,7 @@ require (
 	cloud.google.com/go/longrunning v0.4.1 // indirect
 	github.com/GoogleCloudPlatform/functions-framework-go v1.6.1
 	github.com/cloudevents/sdk-go/v2 v2.13.0 // indirect
-	github.com/crewjam/saml v0.4.12
+	github.com/crewjam/saml v0.4.13
 	github.com/jonboulle/clockwork v0.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/markkurossi/cloudsdk v0.0.0-20230207091824-919c90107183
